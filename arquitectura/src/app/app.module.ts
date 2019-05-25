@@ -15,6 +15,9 @@ import { APP_ROUTING } from './app.routes';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { UsuariosComponent } from './components/usuarios/usuarios.component';
+import { DetallesComponent } from './components/usuarios/detalles/detalles.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    ProyectosComponent,
+    UsuariosComponent,
+    DetallesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    color: #650f8d;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.single-member {
+    box-shadow: rgba(57, 78, 95, .2) 0 10px 16px, rgba(58, 79, 05, .05) 0 -5px 16px;
+}
+
+.single-member .team-heading {
+    background: url('../../../assets/img/puente.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 200px;
+}
+
+.single-member .member-img {
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+
+.single-member .member-img img {
+    width: 100px;
+    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .5);
+}
+
+.member-data {
+    padding: 5%;
+}
+
+.member-info h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.member-info h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.member-info p {
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+.member-socials a {
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    margin: 0 3px;
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.member-socials a i {
+    color: #fff;
+}
+
+.color1 {
+    background: #3748a5;
+}
+
+.color2 {
+    background: #3da2f4;
+}
+
+.color3 {
+    background: #41a2f2;
+}
