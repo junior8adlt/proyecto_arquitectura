@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+ul {
+    padding: 0;
+    position: relative;
+    width: 100%;
+    margin: 10px 10px 30px;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    padding: 10px 20px;
+    color: #9e16dd;
+    border: 1px solid #9e16dd;
+    margin-right: 15px;
+    font-family: 'Paytone One', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    color: #650f8d;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+ul li:hover,
+.active {
+    background: #650f8d;
+    color: #fff !important;
+}
+
+.container {
+    padding: 0 30px;
+    position: relative;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container .row .box img {
+    width: 100% !important;
+    margin: 10px;
+}
+
+.container .box .details {
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    bottom: 14px;
+    right: 11px;
+    background: rgba(243, 242, 242, .8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+.container .box:hover .details {
+    transform: scaleY(1);
+}
+
+.container .box .details .content {
+    border-radius: 100%;
+    height: 60px !important;
+    width: 60px !important;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    border: 2px solid #fff;
+}
+
+.container .box .details .content a {
+    position: absolute;
+    left: 12px;
+    top: 7px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.container .box .details .content:hover {
+    background: #fff;
+    color: #650f8d !important;
+}
+
+.container .box .details .content a i {
+    color: #fff;
+}
+
+.container .box .details .content a i:hover {
+    color: #650f8d !important;
+}
+
+.container .box .details .content a:hover i {
+    color: #650f8d !important;
+}

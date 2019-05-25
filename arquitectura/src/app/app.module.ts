@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { APP_ROUTING } from './app.routes';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PortafolioComponent } from './components/portafolio/portafolio.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    PortafolioComponent
   ],
   imports: [
     BrowserModule,
