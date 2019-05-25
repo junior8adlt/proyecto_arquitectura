@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+.fondo {
+    background-image: url('../../../assets/img/hero-1.png');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.formulario {
+    padding-top: 35%;
+}
+
+.formulario label {
+    color: #fff;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25px;
+}
+
+.formulario .btn {
+    width: 200px;
+    border-radius: 25px;
+    height: 50px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 0.25s;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.formulario .btn:hover {
+    background: linear-gradient(90deg, #4b036d, #9e16dd);
+    border: none;
+    transition: 0.25s;
+}
+
+.animacion h4 {
+    color: #fff;
+    font-family: 'Paytone One', sans-serif;
+    overflow: hidden;
+    animation: type 3s steps(14) infinite;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    margin: auto;
+}
+
+input {
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid #fff;
+    padding: 14px 10px;
+    width: 400px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.25s;
+    font-family: 'Paytone One', sans-serif;
+}
+
+input:focus {
+    width: 450px;
+    border-color: #9e16dd;
+    background: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+input::placeholder {
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(214, 205, 205)
+}
+
+.circle:nth-child(1),
+.circle:nth-child(2),
+.circle:nth-child(3),
+.circle:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    background: black;
+    display: inline-flex;
+    border-radius: 2em;
+    animation: PopUp .9s ease-in infinite;
+}
+
+.circle:nth-child(1) {
+    background: #F46036;
+}
+
+.circle:nth-child(2) {
+    background: #9e16dd;
+    animation-delay: .15s;
+}
+
+.circle:nth-child(3) {
+    background: #00a6a6;
+    animation-delay: .25s;
+}
+
+.circle:nth-child(4) {
+    background: #fff;
+    animation-delay: .35s;
+}
+
+.panel {
+    width: 300px;
+    height: 2px;
+    border-radius: 2em;
+    background: rgb(253, 253, 253);
+    margin: auto;
+}
+
+@keyframes PopUp {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-155px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 14ch;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fondo {
+        width: 100%;
+        height: 100vh;
+    }
+    input {
+        width: 300px;
+    }
+    input:focus {
+        width: 350px;
+    }
+    .animacion {
+        margin-top: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    input {
+        width: 250px;
+    }
+    input:focus {
+        width: 300px;
+    }
+    .animacion {
+        margin-top: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    input {
+        width: 200px;
+    }
+    input:focus {
+        width: 250px;
+    }
+    .animacion {
+        margin-top: 25% !important;
+    }
+}

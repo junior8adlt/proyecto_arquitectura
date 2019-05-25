@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+
+nav .logo {
+    float: left;
+}
+
+nav .logo img {
+    transition: .5s;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    line-height: 80px;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav ul li.active {
+    background: #9e16dd !important;
+}
+
+.active a {
+    color: #fff !important;
+}
+
+li:hover {
+    background: #9e16dd;
+    color: #fff !important;
+}
+
+li a:hover {
+    color: #fff !important;
+}
+
+nav.purple {
+    background: #650f8d !important;
+    color: #fff
+}
+
+nav.purple ul li.active {
+    background: #fff !important;
+    color: #650f8d !important;
+}
+
+nav.purple .active a {
+    color: #650f8d !important;
+    height: 100px !important;
+}
+
+nav.purple ul li:hover {
+    background: #fff !important;
+    color: #650f8d !important;
+}
+
+nav.purple ul li a:hover {
+    color: #650f8d !important;
+}
+
+.main {
+    background-image: url('../../../assets/img/hero-1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

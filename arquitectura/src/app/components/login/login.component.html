@@ -1,0 +1,24 @@
+<div class="container-fluid fondo">
+    <div class="container">
+        <div class="row formulario text-center">
+            <div class="col-md-12  animacion d-none">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+
+                <div class="panel"></div>
+                <h4 data-text="Autentificando" class="mt-2">Autentificando</h4>
+            </div>
+            <div class="col-md-12 login">
+                <form (ngSubmit)="login()">
+                    <label for="Usuario">User</label>
+                    <input class="form-control" [(ngModel)]="user.email" type="text" name="email" id="" placeholder="E-mail">
+                    <label for="Pass">Password</label>
+                    <input class="form-control" [(ngModel)]="user.password" type="password" name="password" id="" placeholder="Password">
+                    <button class="btn  mt-2" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
