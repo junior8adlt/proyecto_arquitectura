@@ -17,6 +17,10 @@
     font-size: 25px;
 }
 
+.login img {
+    width: 45%;
+}
+
 .formulario .btn {
     width: 200px;
     border-radius: 25px;
@@ -146,6 +150,9 @@ input::placeholder {
     }
     .animacion {
         margin-top: 25% !important;
+    }
+    .login img {
+        width: 100% !important;
     }
 }
 
