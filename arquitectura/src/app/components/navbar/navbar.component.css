@@ -38,6 +38,7 @@ nav ul li a {
     font-family: 'Paytone One', sans-serif;
     text-align: center;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 nav ul li.active {

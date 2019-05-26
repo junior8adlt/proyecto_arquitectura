@@ -6,6 +6,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { DetallesComponent } from './components/usuarios/detalles/detalles.component';
+import { CreateEditUsuarioComponent } from './components/usuarios/create-edit-usuario/create-edit-usuario.component';
 
 const APP_ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes = [
     { path: 'proyectos', component: ProyectosComponent },
     { path: 'usuarios', component: UsuariosComponent },
     { path: 'usuarios/detalles', component: DetallesComponent },
+    { path: 'usuarios/editar', component: CreateEditUsuarioComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'login' }
 
 ];

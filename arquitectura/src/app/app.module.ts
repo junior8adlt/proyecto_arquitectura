@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 
 /* Rutas */
@@ -18,6 +19,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { DetallesComponent } from './components/usuarios/detalles/detalles.component';
+import { CreateEditUsuarioComponent } from './components/usuarios/create-edit-usuario/create-edit-usuario.component';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { DetallesComponent } from './components/usuarios/detalles/detalles.compo
     PortafolioComponent,
     ProyectosComponent,
     UsuariosComponent,
-    DetallesComponent
+    DetallesComponent,
+    CreateEditUsuarioComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,9 @@ import { DetallesComponent } from './components/usuarios/detalles/detalles.compo
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgxPageScrollCoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,5 +22,8 @@ export class NavbarComponent implements OnInit {
     }
     });
   }
-
+navigate(section: string){
+  window.location.hash = '';
+  window.location.hash = section;
+}
 }

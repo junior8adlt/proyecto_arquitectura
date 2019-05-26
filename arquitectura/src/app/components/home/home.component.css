@@ -9,6 +9,7 @@
 
 .carousel-caption {
     bottom: 400px;
+    background: rgba(101, 15, 141, .5)
 }
 
 .carousel-caption h5 {

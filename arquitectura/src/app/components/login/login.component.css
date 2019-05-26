@@ -116,6 +116,32 @@ input::placeholder {
     margin: auto;
 }
 
+.fadeIn {
+    animation: fadein 3s;
+}
+
+.fadeOut {
+    animation: fadeout 3s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes PopUp {
     0% {
         transform: translateY(0px);
@@ -154,6 +180,10 @@ input::placeholder {
     .login img {
         width: 100% !important;
     }
+    .errores {
+        width: 100% !important;
+        margin-left: 0% !important;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -165,6 +195,10 @@ input::placeholder {
     }
     .animacion {
         margin-top: 25% !important;
+    }
+    .errores {
+        width: 100% !important;
+        margin-left: 0% !important;
     }
 }
 

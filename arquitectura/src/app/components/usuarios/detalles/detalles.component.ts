@@ -10,13 +10,15 @@ import { UserServices } from '../../../services/user.services';
 })
 export class DetallesComponent implements OnInit {
 public id: any;
+public user: any;
   constructor(public userService: UserServices) { }
 
   ngOnInit() {
    this.id = localStorage.getItem('id');
     this.userService.getuser(this.id).subscribe(
     response => {
-      console.log(response);
+      this.user = response;
+      console.log(this.user);
       
     },
     error => {

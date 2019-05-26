@@ -1,4 +1,8 @@
 <div class="container-fluid fondo">
+    <div *ngIf="message" class=" alert alert-danger animated fadeIn  errores" style="width: 50%; margin-left: 21%;">
+        <strong>Uy!</strong>
+        <p>{{message}}</p>
+    </div>
     <div class="container">
         <div class="row formulario text-center">
             <div class="col-md-12  animacion d-none">

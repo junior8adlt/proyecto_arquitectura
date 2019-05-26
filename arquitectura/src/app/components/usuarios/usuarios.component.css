@@ -6,6 +6,14 @@ h1 {
     text-transform: uppercase;
 }
 
+.editar {
+    width: 90%;
+    background: #650f8d;
+    color: #fff;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 10px;
+}
+
 .single-member {
     box-shadow: rgba(57, 78, 95, .2) 0 10px 16px, rgba(58, 79, 05, .05) 0 -5px 16px;
 }

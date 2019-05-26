@@ -14,6 +14,7 @@ public array: any [] = [];
   constructor(public userService: UserServices, private router: Router) { }
 
   ngOnInit() {
+    localStorage.clear();
 for (let i = 0; i < 3; i++) {
 this.userService.get8users(i).subscribe(
     response => {
@@ -33,6 +34,14 @@ console.log(this.array);
   details(id) {
    localStorage.setItem('id', id);
    this.router.navigate(['usuarios/detalles']);
-
   }
+
+  edit(id, first, last, email, avatar) {
+    localStorage.setItem('id', id);
+    localStorage.setItem('firts', first);
+    localStorage.setItem('last', last);
+    localStorage.setItem('email', email);
+    localStorage.setItem('avatar', avatar);
+    this.router.navigate(['usuarios/editar']);
+   }
 }
