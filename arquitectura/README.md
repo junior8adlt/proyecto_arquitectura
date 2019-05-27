@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This projecr is a landing page for a architecture company
 
 ## Instructions
-For run the projec u must have follow this instructions:
+For run the project u must have follow this instructions:
 1. You have to install NodeJS you can  download on the next link: (https://nodejs.org/es/)
  if u already have it skip this step.
 
