@@ -2,7 +2,6 @@
 .fondo {
     background-image: url('../../../assets/img/hero-1.png');
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center center;
 }
