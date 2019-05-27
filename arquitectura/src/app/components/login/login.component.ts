@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserServices } from '../../services/user.services';
 import { Router } from '@angular/router';
 
+
 declare var JQuery: any;
 declare var $: any;
 @Component({
@@ -48,7 +49,10 @@ if (!this.user.password) {
      }
     },
     error => {
-    console.log(error);
+  console.log(error._body);
+  if (error._body === '{"error":"user not found"}') {
+    this.message = 'Este usuario no se encuentra';
+  }
     }
 );
 }

@@ -12,27 +12,42 @@ export class UserServices {
 
     login(user) {
         const body = `email=${user.email}&password=${user.password}`;
-        const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
 
-        return this.http.post('https://reqres.in/api/login', body, {headers})
-                        .pipe(map(res => res.json()));
+        return this.http.post('https://reqres.in/api/login', body, { headers })
+            .pipe(map(res => res.json()));
     }
     get8users(number) {
-        const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
-        return this.http.get('https://reqres.in/api/users?page=' + number, { headers})
-                                .pipe(map(res => res.json()));
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get('https://reqres.in/api/users?page=' + number, { headers })
+            .pipe(map(res => res.json()));
 
-        }
+    }
 
-        getuser(id) {
-            const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
-            return this.http.get('https://reqres.in/api/users/' + id, { headers})
-                                    .pipe(map(res => res.json()));
-            }
-            get8Resources(number) {
-                const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
-                return this.http.get('https://reqres.in/api/unknown?page=' + number, { headers})
-                                        .pipe(map(res => res.json()));
-        
-                }
+    getuser(id) {
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get('https://reqres.in/api/users/' + id, { headers })
+            .pipe(map(res => res.json()));
+    }
+    get8Resources(number) {
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get('https://reqres.in/api/unknown?page=' + number, { headers })
+            .pipe(map(res => res.json()));
+
+    }
+    create(user) {
+        const body = `name=${user.name}&job=${user.job}`;
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+
+        return this.http.post('https://reqres.in/api/users', body, { headers })
+            .pipe(map(res => res.json()));
+    }
+
+    update(user) {
+        const body = `name=${user.name}&job=${user.job}`;
+        const headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+
+        return this.http.put('https://reqres.in/api/users/' + user.id, body, { headers })
+            .pipe(map(res => res.json()));
+    }
 }
