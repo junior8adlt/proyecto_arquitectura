@@ -26,7 +26,6 @@ export class PortafolioComponent implements OnInit {
     } else {
       $('.filter').not('.' + value).hide('1000');
       $('.filter').filter('.' + value).show('1000');
-      console.log(value);
       if (value === 'puentes') {
         $('.puente').addClass('active');
         $('.todo').removeClass('active');

@@ -28,7 +28,6 @@ for (let i2 = 0; i2 < response.data.length; i2++) {
 );
 }
 this.array.pop();
-console.log(this.array);
   }
 
   details(id) {

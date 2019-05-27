@@ -20,7 +20,6 @@ public array: any [] = [];
     this.userService.getuser(this.id).subscribe(
     response => {
       this.user = response;
-      console.log(this.user);
       
     },
     error => {
@@ -40,7 +39,6 @@ public array: any [] = [];
           }
       );
       }
-      console.log(this.array);
   }
 
 }
