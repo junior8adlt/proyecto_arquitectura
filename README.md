@@ -1,45 +1,54 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Arquitectura
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+This projecr is a landing page for a architecture company
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Instructions
+For run the project u must have follow this instructions:
+1. You have to install NodeJS you can  download on the next link: (https://nodejs.org/es/)
+ if u already have it skip this step.
 
----
+2. After you install NodeJS clone the repo, next go to your terminal and go to the folder called "arquitectura" here a example on windows terminal
+cd C:\Users\Juan\Desktop\proyecto_arquitectura.git\arquitectura
 
-## Edit a file
+3. After u go to the folder run the next command "npm install" this command will be install all the node dependencies of the project
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+4. When the installation finish run the next command "npm install @angular/cli" this command will be install all the dependencies of angular
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+5. When the installation is finish run "ng serve -o"  this will open the browser with the project running
 
----
+6. for you can login the user is "eve.holt@reqres.in" and the password is free u can put whatever u want but dont leave it in blank 
 
-## Create a file
+## CREATE USER AND EDIT
+For you can create or edit users go to the menu link called "Acciones" click on it and you wil see a dropdown, click in the dropdown menu that will redirect you to the create and edit users page
 
-Next, you’ll add a new file to this repository.
+For create give a name an a job to the user and click "Guardar" and  u will see in the table 
+For edit on the same table u will see a section called "Acciones" there is a icon of user edit click on it and on the same page u will how the title change from "Crear Usuario" to "Editar Usuarios" and on the inputs you will see the information of the user that u select change the job or name and click "Guardar" and you will see how is change on the table.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+## USER DETAILS 
+For see the user details go to the "Usuarios" Section and u will see a button called "Detalles" Click on it and you will se the details and the list of the resources
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
 
----
+## Code scaffolding
 
-## Clone a repository
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+## Build
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Developer Contact
+If u have a question or need help to run the project u can contact me by email
+Email: alberto.ochoadltorre@gmail.com
