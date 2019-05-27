@@ -11,6 +11,8 @@ import { UserServices } from '../../../services/user.services';
 export class DetallesComponent implements OnInit {
 public id: any;
 public user: any;
+public array: any [] = [];
+
   constructor(public userService: UserServices) { }
 
   ngOnInit() {
@@ -25,6 +27,20 @@ public user: any;
     console.log(error);
     }
     );
+
+    for (let i = 0; i < 3; i++) {
+      this.userService.get8Resources(i).subscribe(
+          response => {
+      for (let i2 = 0; i2 < response.data.length; i2++) {
+       this.array.push(response.data[i2]);
+      }
+          },
+          error => {
+          console.log(error);
+          }
+      );
+      }
+      console.log(this.array);
   }
 
 }

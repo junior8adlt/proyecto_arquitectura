@@ -89,3 +89,93 @@ nav.purple ul li a:hover {
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #650f8d;
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, .2);
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    transition: 0.5s;
+}
+
+.navigation input:checked~.menu {
+    width: 450px;
+}
+
+.menu li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #42a8f9;
+}
+
+.navigation input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.navigation span {
+    position: absolute;
+    left: 26px;
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.navigation input:checked~span {
+    background: #f974a1;
+}
+
+.navigation span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.navigation input:checked~span:nth-child(2) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.navigation span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.navigation input:checked~span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.container {
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none !important;
+    }
+}

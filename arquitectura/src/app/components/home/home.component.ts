@@ -19,4 +19,9 @@ export class HomeComponent implements OnInit {
     , 5000);
   }
 
+  navigate(section: string){
+    window.location.hash = '';
+    window.location.hash = section;
+  }
+
 }

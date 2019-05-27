@@ -6,8 +6,9 @@
     <img class="nube3" src="assets/img/nube.png" alt="nube3">
 </div>
 
-<section class="d-none main mb-5" id="home1">
+<section class="d-none main " id="home1">
     <app-navbar></app-navbar>
+
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -49,6 +50,19 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div class="body">
+        <div class="navigation">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <ul class="menu">
+                <li><a (click)="navigate('home1')">Home</a></li>
+                <li><a (click)="navigate('portafolio1')">Portafolio</a></li>
+                <li><a (click)="navigate('proyectos1')">Proyectos</a></li>
+                <li><a (click)="navigate('usuarios1')">Usuarios</a></li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="d-none main mt-5 mb-5">
@@ -62,3 +76,31 @@
 <section class="d-none main mt-5 mb-5">
     <app-usuarios></app-usuarios>
 </section>
+
+<footer class="d-none main mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="social-media">
+                    <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="linkein"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="behance"><a href=""><i class="fab fa-behance"></i></a></li>
+                    <li class="instagram"><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li class="google"><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6">
+                <p>Copyright © 2019. Alberto Ochoa De La Torre. All rights reserved.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>Web development by: Alberto Ochoa De La Torre
+                </p>
+                <p><a href="http://albertoochoadelatorre.000webhostapp.com/"><i class="fas fa-globe-americas"> Website</i></a></p>
+            </div>
+        </div>
+    </div>
+</footer>

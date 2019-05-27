@@ -118,3 +118,21 @@ h1 {
     font-family: 'Paytone One', sans-serif;
     color: #650f8d !important;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    h1 {
+        font-size: 20px !important;
+    }
+}

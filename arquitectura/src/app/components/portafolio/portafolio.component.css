@@ -92,3 +92,25 @@ ul li:hover,
 .container .box .details .content a:hover i {
     color: #650f8d !important;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    ul li {
+        float: none !important;
+        padding: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h1 {
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    h1 {
+        font-size: 20px !important;
+    }
+}

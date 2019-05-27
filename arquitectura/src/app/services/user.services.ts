@@ -29,4 +29,10 @@ export class UserServices {
             return this.http.get('https://reqres.in/api/users/' + id, { headers})
                                     .pipe(map(res => res.json()));
             }
+            get8Resources(number) {
+                const headers = new Headers({'Content-Type': 'application/x-www-form-urlencoded'});
+                return this.http.get('https://reqres.in/api/unknown?page=' + number, { headers})
+                                        .pipe(map(res => res.json()));
+        
+                }
 }
