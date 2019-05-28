@@ -265,7 +265,7 @@ footer i {
 
 @media only screen and (max-width: 600px) {
     .body {
-        margin-top: -194% !important;
+        margin-top: -90% !important;
     }
     .menu li a {
         font-size: 14px !important;
